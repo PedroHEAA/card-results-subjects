@@ -81,9 +81,10 @@ body {
 .summary .grades li {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 13px;
     margin-bottom: 15px;
     border-radius: 5px;
+    border: 2px solid;
 }
 
 .summary .grades li .subject{
