@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px hsl(241, 100%, 89%);
+}
+
+.card .result-section {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(180deg, rgba(2, 0, 252, 0.60) 0%, hsl(252, 100%, 67%) 10%, hsl(241, 81%, 54%) 100%);
+}
+
+.card .result-section .title-result {
+    margin-bottom: 30px;
+}
+
+.card .result-section .circle-result {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(70, 42, 215, 1) 0%, rgba(69, 51, 235, 1) 100%);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+/* ATENÇÃO */
+.card .result-section .circle-result .final-score {
+    font-size: 50px;
+}
+
+/* --------------------- */
+
+.card .result-section .grade {
+
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.card .result-section .description {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    text-align: center;
+}
+
+/* --------Summary-------- */
+
+.summary {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.summary .title-summary {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.summary .grades li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.summary .grades li .subject{
+    display: flex;
+    gap: 5px;
+}
+
+.summary .grades .reation {
+    color: hsl(0, 100%, 67%);
+    background-color: #fffbf2;
+}
+
+.summary .grades .memory {
+    color: hsl(39, 100%, 56%);
+    background-color: #fffbf2;
+}
+
+.summary .grades .verbal{
+    color: hsl(166, 100%, 37%);
+    background-color: #f2fbfa;
+}
+
+.summary .grades .visual {
+    color: hsl(234, 85%, 45%);
+    background-color: #f3f3fd;
+}
+
+.summary .grades .grade{
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.summary .grades .max-grade{
+    color: gray;
+}
+
+.summary .button{
+    padding: 15px 80px;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+.summary .button:hover{
+    background: linear-gradient(0deg, rgba(70, 42, 215, 1) 0%, rgba(69, 51, 235, 1) 100%);
+}
+
+@media (max-width:640px) {
+    body{
+        height: 100%;
+    }
+    .card{
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .card .result-section{
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .summary{
+        gap: 20px;
+        height: 100%;
+    }
+
+    .summary .button{
+        text-align: center;
+    }
+}
+
+@media (max-width:245px) {
+    .summary .grades li{
+        font-size: 11px;
+        padding: 8px;
+    }
+
+    .summary .grades .subject .icon{
+        height: 12px;
+        width: 12px;
+    }
+    .summary .button{
+        text-align: center;
+        padding: 8px;
+    }
+}
